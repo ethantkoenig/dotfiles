@@ -1,0 +1,16 @@
+#! /usr/bin/env bash
+
+DISCARDED="${HOME}/.discarded/"
+RAND=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1)
+
+for f in "$@"
+do
+  target=${DISCARDED}/$(basename $f)
+  if [ -e $target ]
+  then
+    mv $target ${target}.bump_${RAND} 
+  fi
+  \rm -rf ${DISCARDED}/$(basename $f)
+  mv $f $DISCARDED
+done
+

@@ -1,0 +1,11 @@
+#! /usr/bin/env bash
+
+function run_command {
+  echo "$(date): $@" >> $HOME/.async/log;
+  $@ &>> $HOME/.async/log;
+  if [[ $? -ne 0 ]]; then
+    notify-send "async: $@" 'see ~/.async/log';
+  fi
+}
+
+run_command $@ &
