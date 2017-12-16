@@ -15,8 +15,6 @@ alias les='vim -R'
 
 alias mkcd='_mkcd(){ mkdir $1; cd $1;}; _mkcd'
 
-alias mv='mv -n'
-alias mvf='mv -f'
 alias rm='echo Deprecated; #'
 
 alias sl='ls'
