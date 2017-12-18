@@ -7,7 +7,6 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'fatih/vim-go'
 Plugin 'kien/ctrlp.vim'
-Plugin 'neomake/neomake'
 
 call vundle#end()            " required for Vundle
 filetype plugin indent on    " required for Vundle
@@ -51,3 +50,7 @@ autocmd FileType go inoremap z z<C-x><C-o>
 
 nmap . gt
 nmap , gT
+nmap <M-,> :tabm -1<CR>
+nmap <M-.> :tabm +1<CR>
+
+let g:UltiSnipsExpandTrigger = "<M-.>"
