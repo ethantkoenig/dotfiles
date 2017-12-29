@@ -13,14 +13,12 @@ alias d='/usr/local/bin/discard'
 
 alias les='vim -R'
 
-alias mkcd='_mkcd(){ mkdir $1; cd $1;}; _mkcd'
+alias mkcd='_mkcd(){ mkdir -p $1; cd $1;}; _mkcd'
 
 alias rm='echo Deprecated; #'
 
 alias sl='ls'
 
-alias cdread='cd ~/Courses/Reading'
-alias cdcode='cd ~/Code'
 alias cdgt='cd $GOPATH/src/code.gitea.io/gitea'
 
-alias ?='echo $?' 
+alias ?='echo $?'
