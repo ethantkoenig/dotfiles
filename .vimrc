@@ -36,4 +36,6 @@ let g:miniBufExplBuffersNeeded = 0
 
 let g:ctrlp_regexp = 1
 
+let g:go_def_mode = 'godef'
+
 " source local vim scripts below
