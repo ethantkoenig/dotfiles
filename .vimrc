@@ -40,6 +40,6 @@ let g:ctrlp_regexp = 1
 let g:go_def_mode = 'godef'
 
 let g:syntastic_auto_loc_list = 1
-let g:syntastic_go_checkers = ['go']
+let g:syntastic_go_checkers = ['gotype']
 
 " source local vim scripts below
