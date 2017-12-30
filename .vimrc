@@ -11,6 +11,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'SirVer/ultisnips'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'vim-syntastic/syntastic'
 
 call vundle#end()            " required for Vundle
 filetype plugin indent on    " required for Vundle
@@ -37,5 +38,8 @@ let g:miniBufExplBuffersNeeded = 0
 let g:ctrlp_regexp = 1
 
 let g:go_def_mode = 'godef'
+
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_go_checkers = ['go']
 
 " source local vim scripts below
