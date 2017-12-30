@@ -12,6 +12,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'SirVer/ultisnips'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-syntastic/syntastic'
+Plugin 'NLKNguyen/papercolor-theme'
 
 call vundle#end()            " required for Vundle
 filetype plugin indent on    " required for Vundle
@@ -22,7 +23,7 @@ set shiftwidth=2
 set expandtab
 set autoread
 set completeopt=noinsert,menuone
-set noeb vb t_vb=
+set noerrorbells
 syntax on
 syntax sync fromstart
 
