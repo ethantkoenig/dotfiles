@@ -33,10 +33,6 @@ set wildmenu
 let g:UltiSnipsExpandTrigger = "<M-.>"
 let g:miniBufExplBuffersNeeded = 0
 
-let g:ctrlp_prompt_mappings = {
-    \ 'AcceptSelection("e")': ['<c-t>'],
-    \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
-    \ }
 let g:ctrlp_regexp = 1
 
 " source local vim scripts below
