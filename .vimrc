@@ -27,9 +27,9 @@ set noerrorbells
 syntax on
 syntax sync fromstart
 
-:nmap . :MBEbn<CR>
-:nmap , :MBEbp<CR>
-:nmap <C-s> :on<CR>:w<CR>
+nmap . :MBEbn<CR>
+nmap , :MBEbp<CR>
+nmap <M-/> :NERDTreeToggle<CR>
 set wildmode=longest,list,full
 set wildmenu
 
