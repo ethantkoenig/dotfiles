@@ -5,8 +5,8 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
+Plugin 'ap/vim-buftabline'
 Plugin 'fatih/vim-go'
-Plugin 'fholgado/minibufexpl.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'SirVer/ultisnips'
@@ -17,30 +17,32 @@ Plugin 'NLKNguyen/papercolor-theme'
 call vundle#end()            " required for Vundle
 filetype plugin indent on    " required for Vundle
 
-set number
-set tabstop=2
-set shiftwidth=2
-set expandtab
 set autoread
 set completeopt=noinsert,menuone
+set expandtab
 set noerrorbells
+set number
+set shiftwidth=2
+set tabstop=2
+set wildmenu
+set wildmode=longest,list,full
+
 syntax on
 syntax sync fromstart
 
-nmap . :MBEbn<CR>
-nmap , :MBEbp<CR>
+nmap . :bn<CR>
+nmap , :bp<CR>
+nmap [ :bd<CR>
 nmap <M-/> :NERDTreeToggle<CR>
-set wildmode=longest,list,full
-set wildmenu
-
-let g:UltiSnipsExpandTrigger = "<M-.>"
-let g:miniBufExplBuffersNeeded = 0
 
 let g:ctrlp_regexp = 1
-
 let g:go_def_mode = 'godef'
-
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_go_checkers = ['gotype']
+let g:UltiSnipsExpandTrigger = "<M-.>"
+
 
 " source local vim scripts below
+if filereadable(expand('~/.local.vim'))
+  source ~/.local.vim
+endif
