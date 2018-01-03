@@ -1,0 +1,116 @@
+{
+    "allow_postpone": false,
+    "break_interval": 10,
+    "long_break_duration": 300,
+    "long_breaks": [
+        {
+            "name": "Walk until break is over"
+        },
+        {
+            "name": "Reckoning time! Plus your Habitica habit (or minus if you've been slacking!)"
+        }
+    ],
+    "meta": {
+        "config_version": "6.0.0"
+    },
+    "no_of_short_breaks_per_long_break": 6,
+    "persist_state": true,
+    "plugins": [
+        {
+            "enabled": true,
+            "id": "donotdisturb",
+            "settings": {
+                "skip_break_windows": "",
+                "take_break_windows": "",
+                "unfullscreen": true
+            },
+            "version": "0.0.1"
+        },
+        {
+            "enabled": true,
+            "id": "notification",
+            "version": "0.0.1"
+        },
+        {
+            "enabled": false,
+            "id": "audiblealert",
+            "version": "0.0.1"
+        },
+        {
+            "enabled": true,
+            "id": "trayicon",
+            "settings": {
+                "disable_options": [
+                    {
+                        "time": 30,
+                        "unit": "minute"
+                    },
+                    {
+                        "time": 1,
+                        "unit": "hour"
+                    },
+                    {
+                        "time": 2,
+                        "unit": "hour"
+                    },
+                    {
+                        "time": 3,
+                        "unit": "hour"
+                    }
+                ],
+                "show_time_in_tray": false
+            },
+            "version": "0.0.1"
+        },
+        {
+            "enabled": true,
+            "id": "smartpause",
+            "settings": {
+                "idle_time": 3
+            },
+            "version": "0.0.1"
+        },
+        {
+            "enabled": false,
+            "id": "screensaver",
+            "settings": {
+                "command": "",
+                "min_seconds": 3
+            },
+            "version": "0.0.1"
+        },
+        {
+            "enabled": false,
+            "id": "healthstats",
+            "version": "0.0.1"
+        }
+    ],
+    "postpone_duration": 5,
+    "pre_break_warning_time": 10,
+    "rpc_port": 7200,
+    "short_break_duration": 60,
+    "short_breaks": [
+        {
+            "name": "5 shoulder rolls"
+        },
+        {
+            "name": "Put right foot on stool until next break"
+        },
+        {
+            "name": "Put left foot on stool until next break"
+        },
+        {
+            "name": "Reach behind back"
+        },
+        {
+            "name": "Touch hands behind back"
+        },
+        {
+            "name": "Focus on maintaining arches in feet"
+        }
+    ],
+    "shortcut_disable_time": 2,
+    "shortcut_postpone": 65,
+    "shortcut_skip": 9,
+    "strict_break": false
+}
