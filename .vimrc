@@ -35,6 +35,7 @@ nmap , :bp<CR>
 nmap [ :bd<CR>
 nmap <M-/> :NERDTreeToggle<CR>
 
+let g:buftabline_indicators = 1
 let g:ctrlp_regexp = 1
 let g:go_def_mode = 'godef'
 let g:syntastic_auto_loc_list = 1
