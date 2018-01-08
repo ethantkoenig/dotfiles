@@ -1,0 +1,7 @@
+#! /usr/bin/env bash
+
+# Script to be run when a note is written to. Asychronously commits and pushes
+# changes (if any). 
+
+cd ~/Notes
+async pushy_commit
