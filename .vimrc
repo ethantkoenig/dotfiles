@@ -40,8 +40,11 @@ let g:ctrlp_regexp = 1
 let g:go_def_mode = 'godef'
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_go_checkers = ['gotype']
+let g:syntastic_markdown_checkers = []
+let g:syntastic_python_checkers = []
 let g:UltiSnipsExpandTrigger = "<M-.>"
 
+autocmd BufWritePost *.md :silent !async notes_written
 
 " source local vim scripts below
 if filereadable(expand('~/.local.vim'))
