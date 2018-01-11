@@ -41,7 +41,8 @@ let g:go_def_mode = 'godef'
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_go_checkers = ['gotype']
 let g:syntastic_markdown_checkers = []
-let g:syntastic_python_checkers = []
+let g:syntastic_python_checkers = ['pylint']
+let g:syntastic_python_pylint_args = '-d R,C' " only display warnings and errors
 let g:UltiSnipsExpandTrigger = "<M-.>"
 
 autocmd BufWritePost *.md :silent !async notes_written
