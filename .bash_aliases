@@ -20,5 +20,6 @@ alias rm='echo Deprecated; #'
 alias sl='ls'
 
 alias cdgt='cd $GOPATH/src/code.gitea.io/gitea'
+alias cdn='cd $HOME/Notes'
 
 alias ?='echo $?'
