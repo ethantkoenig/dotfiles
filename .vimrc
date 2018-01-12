@@ -5,14 +5,16 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
+Plugin 'airblade/vim-gitgutter'
 Plugin 'ap/vim-buftabline'
 Plugin 'fatih/vim-go'
 Plugin 'kien/ctrlp.vim'
+Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'scrooloose/nerdtree'
 Plugin 'SirVer/ultisnips'
+Plugin 'Valloric/ListToggle'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-syntastic/syntastic'
-Plugin 'NLKNguyen/papercolor-theme'
 
 call vundle#end()            " required for Vundle
 filetype plugin indent on    " required for Vundle
