@@ -95,4 +95,4 @@ export GOPATH="${HOME}/.gopath/"
 
 export PYTHONSTARTUP="${HOME}/.pythonrc"
 
-export PATH=${PATH}:${GOPATH}bin:/usr/local/go/bin
+export PATH=${PATH}:${GOPATH}bin:/usr/local/go/bin:${HOME}/.bin
