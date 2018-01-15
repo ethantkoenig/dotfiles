@@ -36,6 +36,7 @@ nmap . :bn<CR>
 nmap , :bp<CR>
 nmap [ :bd<CR>
 nmap <M-/> :NERDTreeToggle<CR>
+nmap gd :YcmCompleter GoTo
 
 let g:buftabline_indicators = 1
 let g:ctrlp_regexp = 1
