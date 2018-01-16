@@ -49,7 +49,10 @@ let g:syntastic_python_checkers = ['pylint']
 let g:syntastic_python_pylint_args = '-d R,C' " only display warnings and errors
 let g:UltiSnipsExpandTrigger = "<M-.>"
 
-autocmd BufWritePost *.md :silent !async notes_written
+augroup md_write
+  autocmd!
+  autocmd BufWritePost *.md :silent !async notes_written
+augroup END
 
 " source local vim scripts below
 if filereadable(expand('~/.local.vim'))
