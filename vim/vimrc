@@ -37,7 +37,7 @@ nnoremap . :bn<CR>
 nnoremap , :bp<CR>
 nnoremap <M-/> :NERDTreeToggle<CR>
 nnoremap <C-A-S-m> :bd<CR>
-nnoremap gd :YcmCompleter GoTo
+nnoremap gd :YcmCompleter GoTo<CR>
 
 let g:buftabline_indicators = 1
 let g:ctrlp_regexp = 1
