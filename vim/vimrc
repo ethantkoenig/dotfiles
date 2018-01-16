@@ -33,11 +33,11 @@ set wildmode=longest,list,full
 syntax on
 syntax sync fromstart
 
-nmap . :bn<CR>
-nmap , :bp<CR>
-nmap [ :bd<CR>
-nmap <M-/> :NERDTreeToggle<CR>
-nmap gd :YcmCompleter GoTo
+nnoremap . :bn<CR>
+nnoremap , :bp<CR>
+nnoremap [ :bd<CR>
+nnoremap <M-/> :NERDTreeToggle<CR>
+nnoremap gd :YcmCompleter GoTo
 
 let g:buftabline_indicators = 1
 let g:ctrlp_regexp = 1
