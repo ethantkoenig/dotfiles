@@ -22,6 +22,7 @@ filetype plugin indent on    " required for Vundle
 set autoread
 set completeopt=noinsert,menuone
 set expandtab
+set hidden
 set noerrorbells
 set number
 set shiftwidth=2
