@@ -1,7 +1,7 @@
 #! /usr/bin/env bash
 
 DISCARDED="${HOME}/.discarded/"
-RAND=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1)
+RAND=$(xxd -l 16 -p /dev/urandom)
 
 for f in "$@"
 do
