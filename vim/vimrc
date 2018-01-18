@@ -38,6 +38,8 @@ nnoremap , :bp<CR>
 nnoremap <M-/> :NERDTreeToggle<CR>
 nnoremap <C-A-S-l> :LToggle<CR>
 nnoremap <C-A-S-m> :bd<CR>
+nnoremap <C-A-S-j> :lnext<CR>
+nnoremap <C-A-S-k> :lprev<CR>
 nnoremap gd :YcmCompleter GoTo<CR>
 
 let g:buftabline_indicators = 1
