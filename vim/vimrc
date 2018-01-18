@@ -36,6 +36,7 @@ syntax sync fromstart
 nnoremap . :bn<CR>
 nnoremap , :bp<CR>
 nnoremap <M-/> :NERDTreeToggle<CR>
+nnoremap <C-A-S-l> :LToggle<CR>
 nnoremap <C-A-S-m> :bd<CR>
 nnoremap gd :YcmCompleter GoTo<CR>
 
