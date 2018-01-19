@@ -10,6 +10,7 @@
 	excludesfile = /home/ethantkoenig/.gitignore
 [alias]
 	co = checkout
+	amend = commit --amend --no-edit
 [push]
 	default = simple
 [filter "lfs"]
