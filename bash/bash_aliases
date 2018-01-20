@@ -9,7 +9,7 @@ alias bmg='_bmg(){ cd $(eval "echo \$bookmark$1");}; _bmg'
 
 alias clr='clear'
 
-alias d='/usr/local/bin/discard'
+alias d='discard'
 
 alias les='vim -R'
 
