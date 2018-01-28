@@ -27,6 +27,13 @@
       create: true
       path: vim/ftplugin/
     # executables
-    ~/.bin:
-      create: true
-      path: bin/
+    ~/.bin/async:
+      path: bin/async
+    ~/.bin/discard:
+      path: bin/discard
+    ~/.bin/notes_written:
+      path: bin/notes_written
+    ~/.bin/pushy_commit:
+      path: bin/pushy_commit
+    ~/.bin/random_phrase:
+      path: bin/random_phrase
