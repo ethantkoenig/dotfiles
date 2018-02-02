@@ -6,7 +6,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'airblade/vim-gitgutter'
-Plugin 'ap/vim-buftabline'
+Plugin 'ethantkoenig/vim-buftabline'
 Plugin 'fatih/vim-go'
 Plugin 'kien/ctrlp.vim'
 Plugin 'NLKNguyen/papercolor-theme'
@@ -35,8 +35,10 @@ set wildmode=longest,list,full
 syntax on
 syntax sync fromstart
 
-nnoremap . :bn<CR>
-nnoremap , :bp<CR>
+nnoremap . :BufTabLineNext<CR>
+nnoremap , :BufTabLinePrev<CR>
+nnoremap <A-.> :BufTabLineRight<CR>
+nnoremap <A-,> :BufTabLineLeft<CR>
 nnoremap <M-/> :NERDTreeToggle<CR>
 nnoremap <C-A-S-l> :LToggle<CR>
 nnoremap <C-A-S-m> :bd<CR>
@@ -45,6 +47,7 @@ nnoremap <C-A-S-k> :lprev<CR>
 nnoremap gd :YcmCompleter GoTo<CR>
 
 let g:buftabline_indicators = 1
+let g:buftabline_separators = 1
 let g:ctrlp_regexp = 1
 let g:go_def_mode = 'godef'
 let g:syntastic_auto_loc_list = 1
