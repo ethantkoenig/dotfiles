@@ -39,9 +39,9 @@ nnoremap . :BufTabLineNext<CR>
 nnoremap , :BufTabLinePrev<CR>
 nnoremap <A-.> :BufTabLineRight<CR>
 nnoremap <A-,> :BufTabLineLeft<CR>
+nnoremap <C-A-S-m> :BufTabLineClose<CR>
 nnoremap <M-/> :NERDTreeToggle<CR>
 nnoremap <C-A-S-l> :LToggle<CR>
-nnoremap <C-A-S-m> :bd<CR>
 nnoremap <C-A-S-j> :lnext<CR>
 nnoremap <C-A-S-k> :lprev<CR>
 nnoremap gd :YcmCompleter GoTo<CR>
