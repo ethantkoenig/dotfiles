@@ -10,6 +10,7 @@
 	excludesfile = /home/ethantkoenig/.gitignore
 [alias]
 	co = checkout
+	cpk = cherry-pick
 	amend = commit --amend --no-edit
 [push]
 	default = simple

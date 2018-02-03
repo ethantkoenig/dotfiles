@@ -7,7 +7,6 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'airblade/vim-gitgutter'
 Plugin 'ethantkoenig/vim-buftabline'
-Plugin 'fatih/vim-go'
 Plugin 'kien/ctrlp.vim'
 Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'ntpeters/vim-better-whitespace'
