@@ -17,7 +17,7 @@ Plugin 'SirVer/ultisnips'
 Plugin 'tpope/vim-commentary'
 Plugin 'Valloric/ListToggle'
 Plugin 'Valloric/YouCompleteMe'
-Plugin 'vim-syntastic/syntastic'
+Plugin 'w0rp/ale'
 
 call vundle#end()            " required for Vundle
 filetype plugin indent on    " required for Vundle
