@@ -8,9 +8,9 @@ do
   target=${DISCARDED}/$(basename $f)
   if [ -e $target ]
   then
-    mv $target ${target}.bump_${RAND} 
+    mv "$target" "${target}.bump_${RAND}"
   fi
-  \rm -rf ${DISCARDED}/$(basename $f)
-  mv $f $DISCARDED
+  \rm -rf "${DISCARDED}/$(basename $f)"
+  mv "$f" $DISCARDED
 done
 
