@@ -10,4 +10,6 @@ fi
 
 git add .
 git commit -m "$(random_phrase)"
+git fetch origin
+git rebase origin/master
 git push
