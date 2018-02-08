@@ -1,0 +1,15 @@
+#! /usr/bin/env bash
+
+set -e
+
+if [ "$#" -eq 0 ]
+then
+  echo "No revision supplied";
+  exit 1;
+fi
+
+subject=$(git show -s --format=%s $1)
+body=$(git show -s --format=%b $1)
+commit_date=$(git show -s --format=%cD $1)
+git reset --soft $1
+git commit --date="$commit_date" -m "$body" -m "$body"

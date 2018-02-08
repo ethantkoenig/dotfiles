@@ -9,9 +9,10 @@
 	quotepath = false
 	excludesfile = /home/ethantkoenig/.gitignore
 [alias]
+	amend = commit --amend --no-edit
 	co = checkout
 	cpk = cherry-pick
-	amend = commit --amend --no-edit
+	sq = squish
 [push]
 	default = simple
 [filter "lfs"]

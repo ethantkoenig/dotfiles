@@ -7,22 +7,22 @@
     ~/.bashrc:
       path: bash/bashrc
     ~/.bash_aliases:
-      path: bash/bash_aliases  
+      path: bash/bash_aliases
     ~/.inputrc:
-      path: bash/inputrc  
+      path: bash/inputrc
     # git
     ~/.gitconfig:
-      path: git/gitconfig  
+      path: git/gitconfig
     ~/.gitignore:
-      path: git/gitignore  
+      path: git/gitignore
     # python
     ~/.pythonrc:
-      path: python/pythonrc  
+      path: python/pythonrc
     # vim
     ~/.vimrc:
       path: vim/vimrc
     ~/.gvimrc:
-      path: vim/gvimrc  
+      path: vim/gvimrc
     ~/.vim/ftplugin:
       create: true
       path: vim/ftplugin/
@@ -31,6 +31,8 @@
       path: bin/async
     ~/.bin/discard:
       path: bin/discard
+    ~/.bin/git-squish:
+      path: bin/git-squish
     ~/.bin/notes_written:
       path: bin/notes_written
     ~/.bin/pushy_commit:
