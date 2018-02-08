@@ -8,8 +8,12 @@ then
   exit 1;
 fi
 
-subject=$(git show -s --format=%s $1)
-body=$(git show -s --format=%b $1)
-commit_date=$(git show -s --format=%cD $1)
-git reset --soft $1
-git commit --date="$commit_date" -m "$body" -m "$body"
+commit_sha=$(git log --reverse --format=%H $1..HEAD | head -1)
+if [ -z "$commit_sha" ]
+then
+  echo "Unable to rebase";
+  exit 1;
+fi
+
+git reset --soft $commit_sha
+git commit --amend --no-edit
