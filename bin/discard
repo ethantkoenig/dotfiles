@@ -5,12 +5,12 @@ RAND=$(xxd -l 16 -p /dev/urandom)
 
 for f in "$@"
 do
-  target=${DISCARDED}/$(basename $f)
-  if [ -e $target ]
+  target=${DISCARDED}/$(basename "$f")
+  if [ -e "$target" ]
   then
     mv "$target" "${target}.bump_${RAND}"
   fi
-  \rm -rf "${DISCARDED}/$(basename $f)"
+  \rm -rf "${DISCARDED}/$(basename "$f")"
   mv "$f" $DISCARDED
 done
 
