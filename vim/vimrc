@@ -7,6 +7,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'airblade/vim-gitgutter'
 Plugin 'ethantkoenig/vim-buftabline'
+Plugin 'fatih/vim-go'
 Plugin 'kien/ctrlp.vim'
 Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'ntpeters/vim-better-whitespace'
@@ -46,15 +47,12 @@ nnoremap <C-A-S-j> :lnext<CR>
 nnoremap <C-A-S-k> :lprev<CR>
 nnoremap gd :YcmCompleter GoTo<CR>
 
+let g:ale_linters = {'go': ['go build']}
 let g:buftabline_indicators = 1
 let g:buftabline_separators = 1
 let g:ctrlp_regexp = 1
 let g:go_def_mode = 'godef'
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_go_checkers = ['gotype']
-let g:syntastic_markdown_checkers = []
-let g:syntastic_python_checkers = ['pylint']
-let g:syntastic_python_pylint_args = '-d R,C' " only display warnings and errors
+let g:go_fmt_command = "goimports"
 let g:UltiSnipsExpandTrigger = "<M-.>"
 
 augroup md_write
