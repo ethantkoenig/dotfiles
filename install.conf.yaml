@@ -33,6 +33,8 @@
       path: bin/discard
     ~/.bin/git-squish:
       path: bin/git-squish
+    ~/.bin/ktg:
+      path: bin/ktg
     ~/.bin/notes_written:
       path: bin/notes_written
     ~/.bin/pushy_commit:
