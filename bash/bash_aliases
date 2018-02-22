@@ -19,6 +19,8 @@ alias rm='echo Deprecated; #'
 
 alias sl='ls'
 
+alias mvim='vim -u $HOME/dotfiles/vim/vimrc.minimal'
+
 alias cdgt='cd $GOPATH/src/code.gitea.io/gitea'
 alias cdn='cd $HOME/Notes'
 
