@@ -3,7 +3,7 @@
 import random
 import requests
 
-fact_type = random.choice(['birb', 'cat', 'dog'])
+fact_type = random.choice(['cat', 'dog'])
 response = requests.get('https://fact.birb.pw/api/v1/' + fact_type)
 response_json = response.json()
 print(response_json['string'])
