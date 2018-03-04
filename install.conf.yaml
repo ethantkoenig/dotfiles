@@ -31,6 +31,8 @@
       path: bin/async
     ~/.bin/discard:
       path: bin/discard
+    ~/.bin/dmd.py:
+      path: bin/dmd.py
     ~/.bin/git-squish:
       path: bin/git-squish
     ~/.bin/ktg:
