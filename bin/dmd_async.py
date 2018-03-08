@@ -2,7 +2,6 @@ import os.path
 import pickle
 import subprocess
 import sys
-import threading
 import time
 
 
@@ -22,7 +21,7 @@ def get_total(filename):
 def notify(init_total, start):
   while True:
     total = init_total + accrued(start)
-    subprocess.call(['notify-send', str(total)])
+    subprocess.call(['notify-send', '--urgency=critical', str(total)])
     time.sleep(10)
 
 
