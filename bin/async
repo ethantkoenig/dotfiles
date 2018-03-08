@@ -4,7 +4,7 @@ function run_command {
   echo "$(date): $@" >> $HOME/.async/log;
   $@ >> $HOME/.async/log 2>&1;
   if [[ $? -ne 0 ]]; then
-    notify-send "async: $@ failed" 'See ~/.async/log';
+    notify-send --urgency=critical "async: $@ failed" 'See ~/.async/log';
   fi
 }
 
