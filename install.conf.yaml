@@ -43,3 +43,5 @@
       path: bin/pushy_commit
     ~/.bin/random_phrase:
       path: bin/random_phrase
+    ~/.bin/sr:
+      path: bin/sr
