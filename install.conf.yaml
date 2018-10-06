@@ -45,3 +45,5 @@
       path: bin/random_phrase
     ~/.bin/sr:
       path: bin/sr
+    ~/.bin/update_last_break:
+      path: bin/update_last_break.py
