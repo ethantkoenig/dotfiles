@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 import functools
+import multiprocessing
 import sys
 
 
@@ -48,12 +49,19 @@ def replace(before, after, fname):
             f.write(content)
 
 
+def replacestar(args):
+    return replace(*args)
+
+
 def main(args):
+    if len(args) < 4:
+        sys.stderr.write("Usage: swap before after fnames...\n")
+        sys.exit(1)
+    pool = multiprocessing.Pool(10)
     before = args[1]
     after = args[2]
     fnames = args[3:]
-    for fname in fnames:
-        replace(before, after, fname)
+    pool.map(replacestar, ((before, after, fname) for fname in fnames))
 
 
 if __name__ == "__main__":
