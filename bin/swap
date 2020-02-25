@@ -1,0 +1,60 @@
+#!/usr/bin/python3
+
+import functools
+import sys
+
+
+def camel_case_words(s):
+    return functools.reduce(lambda acc, c: acc + ("_"+c if c.isupper() else c), s).split("_")
+
+
+def words(s):
+    res = []
+    for piece in s.split("_"):
+        if any(c.islower() for c in piece[1:]) and any(c.isupper() for c in piece[1:]):
+            res.extend(camel_case_words(piece))
+        else:
+            res.append(piece)
+    return res
+
+
+def to_lower_snake_case(s):
+    return "_".join(w.lower() for w in words(s))
+
+
+def to_upper_snake_case(s):
+    return "_".join(w.upper() for w in words(s))
+
+
+def to_lower_camel_case(s):
+    ws = words(s)
+    return ws[0].lower() + "".join(w.title() for w in ws[1:])
+
+
+def to_upper_camel_case(s):
+    return "".join(w.title() for w in words(s))
+
+
+def replace(before, after, fname):
+    with open(fname, 'r') as f:
+        original_content = f.read()
+    content = original_content    
+    content = content.replace(to_lower_snake_case(before), to_lower_snake_case(after))    
+    content = content.replace(to_upper_snake_case(before), to_upper_snake_case(after))    
+    content = content.replace(to_lower_camel_case(before), to_lower_camel_case(after))    
+    content = content.replace(to_upper_camel_case(before), to_upper_camel_case(after))    
+    if content != original_content:
+        with open(fname, 'w') as f:
+            f.write(content)
+
+
+def main(args):
+    before = args[1]
+    after = args[2]
+    fnames = args[3:]
+    for fname in fnames:
+        replace(before, after, fname)
+
+
+if __name__ == "__main__":
+    main(sys.argv)
