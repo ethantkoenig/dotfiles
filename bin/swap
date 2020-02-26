@@ -37,7 +37,7 @@ def to_upper_camel_case(s):
 
 
 def replace(before, after, fname):
-    with open(fname, 'r') as f:
+    with open(fname, "r") as f:
         original_content = f.read()
     content = original_content    
     content = content.replace(to_lower_snake_case(before), to_lower_snake_case(after))    
@@ -45,7 +45,7 @@ def replace(before, after, fname):
     content = content.replace(to_lower_camel_case(before), to_lower_camel_case(after))    
     content = content.replace(to_upper_camel_case(before), to_upper_camel_case(after))    
     if content != original_content:
-        with open(fname, 'w') as f:
+        with open(fname, "w") as f:
             f.write(content)
 
 
