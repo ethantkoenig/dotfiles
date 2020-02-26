@@ -31,12 +31,8 @@
       path: bin/async
     ~/.bin/discard:
       path: bin/discard
-    ~/.bin/dmd.py:
-      path: bin/dmd.py
     ~/.bin/git-squish:
       path: bin/git-squish
-    ~/.bin/ktg:
-      path: bin/ktg
     ~/.bin/notes_written:
       path: bin/notes_written
     ~/.bin/pushy_commit:
@@ -47,5 +43,3 @@
       path: bin/sr
     ~/.bin/swap:
       path: bin/swap
-    ~/.bin/update_last_break:
-      path: bin/update_last_break.py
