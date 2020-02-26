@@ -4,10 +4,10 @@
 [credential]
 	helper = cache --timeout=10800
 [core]
-	editor = vim -u /Users/ethantkoenig/dotfiles/vim/vimrc.minimal
+	editor = vim -u $HOME/dotfiles/vim/vimrc.minimal
 	autocrlf = input
 	quotepath = false
-	excludesfile = /home/ethantkoenig/.gitignore
+	excludesfile = $HOME/.gitignore
 [alias]
 	amend = commit --amend --no-edit
 	co = checkout
