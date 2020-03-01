@@ -38,6 +38,7 @@ set wildmode=longest,list,full
 syntax on
 syntax sync fromstart
 
+inoremap <C-A-S-v> +
 nnoremap . :BufTabLineNext<CR>
 nnoremap , :BufTabLinePrev<CR>
 nnoremap <A-.> :BufTabLineRight<CR>
@@ -47,6 +48,8 @@ nnoremap <M-/> :NERDTreeToggle<CR>
 nnoremap <C-A-S-l> :LToggle<CR>
 nnoremap <C-A-S-j> :lnext<CR>
 nnoremap <C-A-S-k> :lprev<CR>
+nnoremap <C-A-S-v> "+p
+vnoremap <C-A-S-v> "+p
 nnoremap gd :YcmCompleter GoTo<CR>
 
 let g:ale_linters = {'go': ['go build']}
