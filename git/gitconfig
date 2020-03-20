@@ -14,7 +14,7 @@
 	cpk = cherry-pick
 	sq = squish
 [push]
-	default = simple
+	default = upstream
 [filter "lfs"]
 	required = true
 	clean = git-lfs clean -- %f
