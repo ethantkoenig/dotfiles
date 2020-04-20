@@ -57,11 +57,6 @@ let g:go_def_mode = 'godef'
 let g:go_fmt_command = "goimports"
 let g:UltiSnipsExpandTrigger = "<M-.>"
 
-augroup md_write
-  autocmd!
-  autocmd BufWritePost *.md :silent !async notes_written
-augroup END
-
 " source local vim scripts below
 if filereadable(expand('~/.local.vim'))
   source ~/.local.vim
